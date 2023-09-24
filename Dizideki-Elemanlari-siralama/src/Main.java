@@ -19,5 +19,10 @@ public class Main {
         System.out.println(Arrays.toString(array));
         Arrays.sort(array);
         System.out.println("Dizinin Sıralaması : "+Arrays.toString(array));
+<<<<<<< HEAD
     }
 }
+=======
+        }
+    }
+>>>>>>> 5854830597fd500da1ad3eaf3b64cd8d2af607ef
