@@ -1,50 +1,37 @@
-import java.util.Scanner;
-import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
-        //Kullanıcıdan veri alalım
-        Scanner info=new Scanner(System.in);
-        System.out.print("Matrisin satır sayısını giriniz : ");
-        int i=info.nextInt();
-        System.out.print("Matrisin sütun sayısını giriniz : ");
-        int j= info.nextInt();
-        int [][]matris=new int[i][j];
 
-        for (i=0;i< matris.length;i++){
-            int a=1;
-            for (j=0; j<matris[i].length; j++){
-                System.out.print(a+" . elamanı giriniz : ");
-                a++;
-                matris[i][j]= info.nextInt();
+
+        int[][] matris = new int[2][3];
+        int[][] transpozu = new int[3][2];
+        int number = 1;
+
+        for (int i = 0; i < matris.length; i++) {
+            int[] row = matris[i];
+
+            for (int j = 0; j < row.length; j++) {
+                row[j] = number;
+                number++;
             }
         }
-        //Matrisi Ekrana bastırdık
-        System.out.println("Matris;");
-        for (int[] row: matris){
-            for (int col:row){
-                System.out.print(col + " ");
+
+        for (int row = 0; row < matris.length; row++) {
+            for (int column = 0; column < matris[row].length; column++) {
+                System.out.print(matris[row][column] + " ");
             }
             System.out.println();
         }
-        //Matirisin satır sutun bilgilerini ters olarak işleyelim
-        int k=j , l=i;
-        int [][] transpoz=new int[k][l];
 
-        for (i = 0; i < matris.length; i++) {
-            for (j = 0; j < matris[i].length; j++) {
-                if (i == j) {
-                    transpoz[i][j] = matris[i][j];
-                } else {
-                    transpoz[j][i] = matris[i][j];
-                }
-            }
-        }
-        System.out.println("Matrisin Transpozu;");
-        for (int[] row:transpoz){
-            for (int col: row){
-                System.out.print(col+ " ");
+        System.out.println("#########");
+
+        for (int row = 0; row < transpozu.length; row++) {
+            for (int col = 0; col < transpozu[row].length; col++) {
+
+                transpozu[row][col] = matris[col][row];
+                System.out.print(transpozu[row][col] + " ");
             }
             System.out.println();
         }
+
     }
 }
