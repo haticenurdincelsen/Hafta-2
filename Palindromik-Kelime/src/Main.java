@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Main {
     static boolean isPalindrome(String str) {
         int i = 0;
@@ -13,6 +13,9 @@ public class Main {
         return true;
     }
     public static void main(String[] args){
-            System.out.println(isPalindrome("kazak"));
+        Scanner input=new Scanner(System.in);
+        System.out.println("Bir kelime giriniz : ");
+        String word=input.nextLine();
+            System.out.println(isPalindrome(word));
         }
 }
