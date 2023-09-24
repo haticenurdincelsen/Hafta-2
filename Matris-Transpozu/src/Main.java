@@ -11,8 +11,10 @@ public class Main {
         int [][]matris=new int[i][j];
 
         for (i=0;i< matris.length;i++){
+           int a=1;
             for (j=0; j<matris[i].length; j++){
-                System.out.print((i+1)+" . elamanı giriniz : ");
+                System.out.print(a+" . elamanı giriniz : ");
+                a++;
                 matris[i][j]= info.nextInt();
             }
         }
