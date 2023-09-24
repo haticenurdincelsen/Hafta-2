@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dizilerde-Tekrar-Eden-Cift-Sayilar.iml" filepath="$PROJECT_DIR$/Dizilerde-Tekrar-Eden-Cift-Sayilar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TekrarEdenCiftSayi.iml" filepath="$PROJECT_DIR$/TekrarEdenCiftSayi.iml" />
     </modules>
   </component>
 </project>

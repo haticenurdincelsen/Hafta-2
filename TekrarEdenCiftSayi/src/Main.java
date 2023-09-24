@@ -15,18 +15,18 @@ public class Main {
             }
         }
 
-            for (int i : duplicate) {
-                if (i!=0) {
-                    System.out.println(i);
-                }
+        for (int i : duplicate) {
+            if (i!=0) {
+                System.out.println(i);
             }
         }
-        static boolean isFind(int []array,int value){
+    }
+    static boolean isFind(int []array,int value){
         for (int i:array){
             if (i==value){
                 return true;
-                        }
-                    }
-        return false;
-                }
             }
+        }
+        return false;
+    }
+}
